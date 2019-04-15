@@ -10,7 +10,8 @@ urlを変更させるだけで簡単に設置できます。
 
 ```less
 @import "フルパス/theme/controller.less";
+// 現在は light か dark
 @bgcolor: 'light';
-@url: "https://images7.alphacoders.com/441/441572.jpg";
+@url: "画像のリンク";
 .controller(@bgcolor, @url);
 ```

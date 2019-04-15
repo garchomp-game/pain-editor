@@ -1,0 +1,11 @@
+// import
+@import "dark.less";
+@import "light.less";
+// controller
+.controller(@name, @url) when (@name = "light"){
+  .light-theme(@url);
+}
+
+.controller(@name, @url) when (@name = "dark"){
+  .dark-theme(@url);
+}

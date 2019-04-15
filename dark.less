@@ -1,0 +1,79 @@
+.dark-theme(@url){
+  atom-panel.bottom
+  {
+      background-color: rgba(37, 37, 37, .85);
+  }
+
+  atom-pane, atom-panel { background-color: rgba(0, 0, 0, .7) !important;
+  }
+
+  atom-pane-resize-handle {
+      background-color: rgba(0, 0, 0, .55);
+  }
+
+  .tree-view
+  {
+      background-image: none !important;
+      background-color: rgba(0, 0, 0, .4);
+  }
+
+  .tab-bar
+  {
+      background-image: none;pwd
+      background-color: rgba(0, 0, 0, .35);
+  }
+
+  atom-text-editor, .tab-bar .tab, .tab-bar .tab:before, .tab-bar .tab:after, .tab-bar:after, .tool-panel
+  {
+      background: none;
+  }
+
+  atom-workspace
+  {
+      background-image: url(@url);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  // Editor
+  atom-text-editor::shadow .selection .region
+  {
+      background: rgba(55, 55, 55, .7);
+  }
+
+  atom-text-editor.is-focused::shadow .selection .region
+  {
+      background: rgba(55, 55, 90, .75);
+  }
+
+  // Settings
+  .settings-view .package-card, .settings-view select.form-control
+  {
+      background-color: rgba(0, 0, 0, .4);
+  }
+
+  .settings-view .package-card:hover
+  {
+      background-color: rgba(0, 0, 0, .8) !important;
+  }
+
+  .settings-view .config-menu
+  {
+      background-color: rgba(0, 0, 0, .3);
+  }
+
+  atom-text-editor[mini]
+  {
+      background-color: rgba(0, 0, 0, .3) !important;
+  }
+
+  atom-pane-container atom-pane .item-views .pane-item
+  {
+      background: none;
+  }
+
+  // Term2
+  .terminal { background: none !important; }
+
+}
